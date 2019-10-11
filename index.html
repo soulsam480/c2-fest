@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>C2 Fest | One day engaging fest for school kids.</title>
     <style>
+      @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
       body {
+        font-family: "Oswald", sans-serif;
+
         margin: 0;
         background-color: #f6f5df;
       }
@@ -18,37 +21,57 @@
         margin: 0;
       }
 
-      @media only screen and (max-width: 600px) {
-        .main {
+      @media only screen and (min-width: 600px) {
+        .header{
+            padding:120px 0 0 20px;
+        }
+        .header h1{
+            font-size: 30px;
         }
       }
-      ul{
-          margin: 0;
-          display: inline;
-          list-style-type: none;
-      }
-      ul li{
-          display: inline-block;
-      }
-      .nav-desktop{
-          font-size: 23px;
-          padding: 10px 20px 0 0;
-          float: right;
 
+      @media only screen and (max-width: 600px) {
+        .nav-desktop {
+          display: none;
+        }
+        .header {
+            padding:10px 0 0 20px;
+            letter-spacing: 2px;
+        }
+      }
+      ul {
+        margin: 0;
+        display: inline;
+        list-style-type: none;
+      }
+      .nav-desktop li {
+        display: inline-block;
+        padding: 2px 10px 2px 10px;
+      }
+      .nav-desktop {
+        font-size: 23px;
+        padding: 30px 20px 0 0;
+        float: right;
+      }
+      .nav-desktop li:hover {
+        color: rgb(14, 126, 201);
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-      <div class="nav">
-          <ul class="nav-desktop">
-              <li>asd</li>
-              <li>svs</li>
-              <li>vsdv</li>
-          </ul>
-      </div>
+    <div class="nav">
+      <ul class="nav-desktop">
+        <li>ABOUT</li>
+        <li>EVENTS</li>
+        <li>REGISTER</li>
+        <li>CONTACT US</li>
+      </ul>
+    </div>
     <div class="main">
-
-
+      <div class="header">
+        <h1>C<sup>2 </sup> Fest</h1>
+      </div>
     </div>
   </body>
 </html>
