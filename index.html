@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>C2 Fest | One day engaging fest for school kids.</title>
     <style>
-      @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Oswald|Righteous&display=swap");
       body {
-        font-family: "Oswald", sans-serif;
-
+          scroll-behavior: smooth;
+        font-family: "Righteous", sans-serif;
         margin: 0;
         background-color: #f6f5df;
       }
@@ -22,22 +22,15 @@
       }
 
       @media only screen and (min-width: 600px) {
-        .header{
-            padding:120px 0 0 20px;
-        }
-        .header h1{
-            font-size: 30px;
-        }
+       
+        
       }
 
       @media only screen and (max-width: 600px) {
         .nav-desktop {
           display: none;
         }
-        .header {
-            padding:10px 0 0 20px;
-            letter-spacing: 2px;
-        }
+       
       }
       ul {
         margin: 0;
@@ -57,20 +50,30 @@
         color: rgb(14, 126, 201);
         cursor: pointer;
       }
+     .header{
+         height: 700px;
+     }
+     a{
+         text-decoration: none;
+         color: unset;
+     }
     </style>
   </head>
   <body>
     <div class="nav">
       <ul class="nav-desktop">
-        <li>ABOUT</li>
+        <li> <a href="#about">ABOUT</a> </li>
         <li>EVENTS</li>
         <li>REGISTER</li>
         <li>CONTACT US</li>
       </ul>
     </div>
     <div class="main">
-      <div class="header">
-        <h1>C<sup>2 </sup> Fest</h1>
+      <div class="header" id="header">
+          <!--the header logo-->
+      </div>
+      <div class="about" id="about">
+
       </div>
     </div>
   </body>
