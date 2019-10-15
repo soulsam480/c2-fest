@@ -7,12 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>C2 Fest | One day engaging fest for school kids.</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menustyle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <style>
-       
+
     </style>
 </head>
 
 <body>
+    <a class="hamburger menu-btn" style="padding:5px;" href="javascript:void(0)"><span></span></a>
+    <div class="main-menu-wrap">
+        <div class="main-menu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Get in Touch</a>
+        </div>
+    </div>
     <div class="nav">
         <ul class="nav-desktop">
             <li onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">
@@ -30,7 +43,7 @@
         </ul>
     </div>
     <div class="main">
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
         <div class="header" id="header">
             <!--the header logo-->
@@ -53,6 +66,32 @@
     </div>
 </body>
 <script>
+$(function(){
+             
+             var clicked = 0;
+             $('.menu-btn').click(function(e){
+              
+                 var screen_height = $(window).width() ;
+                  
+                 $(this).toggleClass('active');
+                 $('body').toggleClass('menu-active');
+                  
+                 if (clicked == 0) {
+                     $('.main-menu-wrap').width(screen_height);
+                     clicked = 1;
+                     return;
+                 }
+                  
+                 if (clicked == 1) {
+                     $('.main-menu-wrap').removeAttr('style');
+                     clicked = 0;
+                     return;
+                 }
+                  
+             });
+              
+         });</script>
+<script>
     //Get the button
     var mybutton = document.getElementById("myBtn");
 
@@ -74,7 +113,8 @@
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
-        document.getElementById('header').scrollIntoView({ behavior: 'smooth' });    }
+        document.getElementById('header').scrollIntoView({ behavior: 'smooth' });
+    }
 </script>
 
 </html>

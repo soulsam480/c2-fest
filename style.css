@@ -17,13 +17,13 @@ body {
     margin: 0;
 }
 /*desktop media query*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
 .h-image{
     width: 50%;
     position: absolute;
     top: 30%;
     left: 30%;
-    margin-right: -50%;
+    margin-right: -30%;
     transform: translate(-30%, -30%)
 }
 }
@@ -70,7 +70,6 @@ ul {
     padding: 30px 20px 0 0;
     float: right !important;
     position: sticky;
-    z-index: 10;
 }
 
 .nav-desktop li:hover {
