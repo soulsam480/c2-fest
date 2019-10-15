@@ -68,7 +68,7 @@
 $(function(){
              
              var clicked = 0;
-             $('.menu-btn').click(function(e){
+             $('.menu-btn' ).click(function(e){
               
                  var screen_height = $(window).width() ;
                   
@@ -87,6 +87,15 @@ $(function(){
                      return;
                  }
                   
+             });
+             $('.main-menu').click(function(e){
+                if (clicked == 1) {
+                     $('.main-menu-wrap').removeAttr('style');
+                     $('.menu-btn').removeClass('active');;
+
+                     clicked = 0;
+                     return;
+                 }
              });
               
          });</script>
