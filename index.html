@@ -16,14 +16,13 @@
 </head>
 
 <body>
-    <a class="hamburger menu-btn" style="padding:5px;" href="javascript:void(0)"><span></span></a>
+    <a class="hamburger menu-btn" style="padding:0 5px 0 0;" href="javascript:void(0)"><span></span></a>
     <div class="main-menu-wrap">
         <div class="main-menu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Blog</a>
-            <a href="#">Get in Touch</a>
+            <a onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">ABOUT</a>
+            <a onclick="document.getElementById('events').scrollIntoView({ behavior: 'smooth' });">EVENTS</a>
+            <a onclick="document.getElementById('register').scrollIntoView({ behavior: 'smooth' });">REGISTER</a>
+            <a onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">CONTACT</a>
         </div>
     </div>
     <div class="nav">
@@ -77,7 +76,7 @@ $(function(){
                  $('body').toggleClass('menu-active');
                   
                  if (clicked == 0) {
-                     $('.main-menu-wrap').width(screen_height);
+                     $('.main-menu-wrap').width(0.8*screen_height);
                      clicked = 1;
                      return;
                  }

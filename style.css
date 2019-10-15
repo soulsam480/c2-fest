@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 
 body {
     scroll-behavior: smooth;
-    font-family: "Righteous", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     margin: 0;
-    background-color:#f6f5df;
+    background-color:#FBF8EF;
 }
 
 /*
 */
 
 .main {
+    top: 50%;
     background-image: url("final.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -30,23 +31,24 @@ body {
 
 /*Mobile media query*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .nav-desktop {
         display: none;
     }
     .h-image{
         width: 70%;
         position: absolute;
-        top: 18%;
+        top: 35%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -18%)
+        transform: translate(-50%, -35%)
     }
     .main {
         background-image: url("phonebeta.svg");
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0;
+        padding: 20px 0 0 0;
     }
    
 }
@@ -66,10 +68,12 @@ ul {
 }
 
 .nav-desktop {
+    float:right;
+    background-color:#FBF8EF;
+    font-weight: 700;
+    color: #353E4A;
     font-size: 23px;
-    padding: 30px 20px 0 0;
-    float: right !important;
-    position: sticky;
+    padding: 10px 10px 10px 0;
 }
 
 .nav-desktop li:hover {

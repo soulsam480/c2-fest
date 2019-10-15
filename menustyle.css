@@ -43,7 +43,7 @@
 .hamburger span:before, .hamburger span:after {
     width: 28px;
     height: 3px;
-    background-color: rgb(0, 0, 0);
+    background-color: #353E4A;
     display: block
 }
  
@@ -113,16 +113,15 @@
 }
  
 .main-menu-wrap {
+    float: right;
     z-index: 9999;
     position: absolute;
-    left: 0;
     right: 0;
     width: 100%;
-    background: #09c;
+    background: #fcf5e2;
     width: 0;
     height: 100%;
     overflow: auto;
-    text-align: center;
     transition: width 0.6s cubic-bezier(0.5, 1, 0.22, 1);
     -webkit-transition: width 0.6s cubic-bezier(0.5, 1, 0.22, 1);
 }
@@ -141,7 +140,7 @@
 }
  
 .main-menu a {
-    color: #fff;
+    color: #353E4A;
     display: block;
     font-size: 1.5em;
     font-weight: 700;
