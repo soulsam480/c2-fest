@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Righteous&display=swap");
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Righteous", sans-serif;
+    margin: 0;
+    background-color:#f6f5df;
+}
+
+/*
+*/
+
+.main {
+    background-image: url("final.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+/*desktop media query*/
+@media only screen and (min-width: 600px) {
+.h-image{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-30%, -30%)
+}
+}
+
+/*Mobile media query*/
+
+@media only screen and (max-width: 600px) {
+    .nav-desktop {
+        display: none;
+    }
+    .h-image{
+        width: 70%;
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -18%)
+    }
+    .main {
+        background-image: url("phonebeta.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+   
+}
+.h-image{
+   
+}
+
+ul {
+    margin: 0;
+    display: inline;
+    list-style-type: none;
+}
+
+.nav-desktop li {
+    display: inline-block;
+    padding: 2px 10px 2px 10px;
+}
+
+.nav-desktop {
+    font-size: 23px;
+    padding: 30px 20px 0 0;
+    float: right !important;
+    position: sticky;
+    z-index: 10;
+}
+
+.nav-desktop li:hover {
+    color: rgb(14, 126, 201);
+    cursor: pointer;
+}
+
+.header {
+    height: 700px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* the scroll top code*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #B4E55C;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #cff588;
+    box-shadow: -2px 1px 3px rgb(148, 147, 147);
+
+}
