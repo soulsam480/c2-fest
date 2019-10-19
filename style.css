@@ -45,7 +45,7 @@ body {
 
 /*Mobile media query*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .nav-desktop {
         display: none;
     }
@@ -79,6 +79,15 @@ body {
       
     }
    
+}
+/* media queries for 16:9 mobile phones*/
+@media only screen and (max-width:360px){
+    .about{
+        height: 500px !important;
+    }
+}
+.about{
+    height:570px;
 }
 .h-image{
    
