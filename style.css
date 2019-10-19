@@ -57,6 +57,13 @@ body {
         margin: 0;
         padding: 20px 0 0 0;
     }
+    .about{
+        background-image: url("about-back-final-01.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+      
+    }
    
 }
 .h-image{
@@ -115,4 +122,10 @@ a {
     background-color: #cff588;
     box-shadow: -2px 1px 3px rgb(148, 147, 147);
 
+}
+/*section styles start here*/
+
+.about{
+   
+  
 }
