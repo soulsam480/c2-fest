@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 
-
+@font-face {
+    font-family: 'Lemon/Milk light';
+    src:
+        local('Lemon Milk Light'),
+        local('Lemon Milk Light'),
+        url('LemonMilklight.otf');
+    }
 h1,h2,h3,h4,h5,p,span{
     margin-block: 0;
     margin: 0 !important;
@@ -9,9 +15,10 @@ h1,h2,h3,h4,h5,p,span{
 
 body {
     scroll-behavior: smooth;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "lemon/Milk light";
     margin: 0;
     background-color:#FBF8EF;
+    letter-spacing: 1.5px;
 }
 
 /*
@@ -51,7 +58,7 @@ body {
         transform: translate(-50%, -35%)
     }
     .main {
-        background-image: url("phonebeta.svg");
+        background-image: url("phonebeta-final.svg");
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0;
@@ -59,6 +66,13 @@ body {
     }
     .about{
         background-image: url("about-back-final-01.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+      
+    }
+    .events{
+        background-image: url("events-section-01.svg");
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
@@ -116,11 +130,12 @@ a {
     cursor: pointer;
     padding: 10px;
     border-radius: 4px;
+    box-shadow:-1px 1px #6d6c6c;
 }
 
 #myBtn:hover {
     background-color: #cff588;
-    box-shadow: -2px 1px 3px rgb(148, 147, 147);
+    box-shadow: -2px 1px 3px #949393;
 
 }
 /*section styles start here*/
