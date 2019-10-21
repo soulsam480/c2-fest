@@ -8,8 +8,20 @@
   background-color:#4b0081  ;
   content: '';
   position: absolute;
-  height:620px;
+  height:650px;
   transform: translateX(6px);
+}
+@media only screen and (min-width:768px){
+  .entries:before{
+    z-index: 1000;
+    left: 11px;
+    width:4px;
+    background-color:#4b0081  ;
+    content: '';
+    position: absolute;
+    height:530px;
+    transform: translateX(6px);
+  }
 }
 
 .entry{
@@ -41,4 +53,5 @@
 }
 .entries .entry .title.big{
   font-size:27px;
+  
 }

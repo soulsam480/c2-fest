@@ -37,6 +37,12 @@ body {
     background-repeat: no-repeat;
     margin: 0;
 }
+.events{
+    background-image: url("desktop-events-01.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+}
 /*desktop media query*/
 @media only screen and (min-width: 768px) {
 .h-image{
@@ -52,6 +58,12 @@ body {
 }
 .m-abtext{
     display: none;
+}
+.events{
+    height: 650px;
+}
+.entries{
+    width: 50%;
 }
 }
 
