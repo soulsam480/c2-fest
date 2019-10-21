@@ -43,6 +43,12 @@ body {
     background-repeat: no-repeat;
     margin: 0;
 }
+.contact{
+    background-image: url("desktop-contact-01.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
 /*desktop media query*/
 @media only screen and (min-width: 768px) {
 .h-image{
@@ -65,6 +71,57 @@ body {
 .entries{
     width: 50%;
 }
+.contact{
+    height: 550px;
+}
+.fchild-1{
+    width: 25% !important;
+    float: left;
+    margin: 0 !important;
+}
+.fchild-2{
+  width: 25% !important;
+  float: left;
+  font-size: 25px;
+  line-height: 2em;
+  text-align: left;
+  margin: 0 !important;
+}
+.fchild-3{
+  display: none !important;
+}
+.fchild-4{
+  display: none;
+}
+.fchild-5{
+    font-size: 25px;
+
+    width: 25% !important;
+    float: left;
+}
+.fchild-6{
+  width: 25% !important;
+  float: left;
+  text-align: left;
+}
+.address{
+    padding-left: 0 !important;
+}
+.footer-row{
+    padding: 70px 10px  0 10px !important;
+}
+.f-image{
+    width: 335px;
+}
+.f-social-icons{
+    padding: 20px 10px 10px 0 !important;
+    width: 50px !important;
+}
+.address{
+    font-size: 25px;
+line-height: 1.5em;
+}
+
 }
 
 /*Mobile media query*/
@@ -115,6 +172,17 @@ body {
     .row{
         display: none;
     }
+    .f-image{
+        width: 135px;
+          padding-top: 17.48px;
+    }
+    .fchild-5{
+        display: none !important;
+    }
+    .fchild-6{
+        display:none !important;
+    }
+   
 
    
 }
@@ -260,8 +328,8 @@ a {
 }
 .f-social-icons{
     padding: 2px;
-width: 35px;
-display: inline-block;
+    width: 35px;
+    display: inline-block;
 }
 .address{
     white-space: nowrap;
