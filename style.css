@@ -102,6 +102,13 @@ body {
         margin: 0;
       
     }
+    .contact{
+        background-image: url("contacts-section-01.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+      
+    }
     .about{
         height:570px;
     }
@@ -121,6 +128,16 @@ body {
     }
     .row{
         display: none;
+    }
+    .f-social-media{
+        font-size: 14px;
+    }
+    .address{
+        font-size: 14px;
+
+    }
+    .f-social-icons{
+        width: 30px !important;
     }
 }
 
@@ -211,3 +228,43 @@ a {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   
+  .footer-row:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .fchild-1{
+      width: 34%;
+      float: left;
+      margin-right: 1%;
+  }
+  .fchild-2{
+    margin-left: 2%;
+    width: 63%;
+    float: left;
+    text-align: left;
+}
+.fchild-3{
+    width: 40%;
+    float: left;
+}
+.fchild-4{
+    width: 59%;
+    float: left;
+}
+.footer-row{
+    padding: 10px 10px 0 10px;
+}
+.f-social-media{
+    display: inline;
+}
+.f-social-icons{
+    padding: 2px;
+width: 35px;
+display: inline-block;
+}
+.address{
+    white-space: nowrap;
+    padding-left: 3px;
+}
+
