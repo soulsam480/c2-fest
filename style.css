@@ -124,7 +124,12 @@ line-height: 1.5em;
 #phone-footer{
     display: none;
 }
-
+.s1>div{
+    padding: 10px 60px 10px 60px !important;
+}
+.s2>div{
+    padding: 10px 60px 10px 60px !important;
+}
 }
 
 /*Mobile media query*/
@@ -185,7 +190,12 @@ line-height: 1.5em;
     .fchild-6{
         display:none !important;
     }
-  
+    .s1{
+        width: 100% !important ;
+    }
+    .s2{
+        width: 100% !important;
+    }
 
    
 }
@@ -339,3 +349,16 @@ a {
     padding-left: 3px;
 }
 
+.s-row:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.s1{
+    float: left;
+    width: 50%;
+}
+.s2{
+    float: left;
+    width: 50%;
+}
