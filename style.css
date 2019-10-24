@@ -121,6 +121,9 @@ body {
     font-size: 25px;
 line-height: 1.5em;
 }
+#phone-footer{
+    display: none;
+}
 
 }
 
@@ -173,7 +176,7 @@ line-height: 1.5em;
         display: none;
     }
     .f-image{
-        width: 135px;
+        width:120px;
           padding-top: 17.48px;
     }
     .fchild-5{
@@ -182,7 +185,7 @@ line-height: 1.5em;
     .fchild-6{
         display:none !important;
     }
-   
+  
 
    
 }
@@ -313,7 +316,7 @@ a {
     text-align: left;
 }
 .fchild-3{
-    width: 40%;
+    width: 39%;
     float: left;
 }
 .fchild-4{
