@@ -250,6 +250,17 @@ ul {
     color: rgb(14, 126, 201);
     cursor: pointer;
 }
+.links{
+    color: black;
+    padding: 2px 5px;
+    font-size: 12px;
+    background-color: white;
+
+}
+.links:hover{
+    color: white;
+    background-color: black;
+}
 
 
 a {
