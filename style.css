@@ -247,7 +247,8 @@ ul {
 }
 
 .nav-desktop li:hover {
-    color: rgb(14, 126, 201);
+    background-color: black;
+    color: white;
     cursor: pointer;
 }
 .links{
